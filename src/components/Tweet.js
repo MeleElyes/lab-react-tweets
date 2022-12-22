@@ -10,16 +10,16 @@ function Tweet(props) {
   return (
 
     <div className="tweet">
-      <ProfileImage image={props.tweet.user.image}
+      <ProfileImage image={props.user.image}
       />
 
       <div className="body">
         <div className="top">
-          <User userData={props.tweet.user}/>
-          <Timestamp time={props.tweet.timestamp} />
+          <User userData={props.user}/>
+          <Timestamp time={props.timestamp} />
         </div>
 
-        <Message message={props.tweet.message}/>
+        <Message message={props.message}/>
 
         <Actions/>
       </div>
